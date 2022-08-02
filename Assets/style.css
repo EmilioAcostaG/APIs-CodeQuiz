@@ -20,17 +20,9 @@ body {
   width: 60%;
   padding: 3rem;
   text-align: center;
- 
-  /*display: none;*/
 }
 
-.card {
-  padding: 2rem;
-  margin: 0;
- /* display:none;*/
-}
-
-button {
+.quiz-button {
   background-color: rgb(200, 58, 200);
   color: white;
   cursor: pointer;
@@ -46,15 +38,37 @@ button:hover {
 }
 
 
+.container {
+  width: 60vw;
+  padding: 1rem;
+  
+  /* display:none; */
+}
+
+#question {
+  background-color: rgb(200, 58, 200);
+  color: white;
+}
+
+.hide {
+  display: none;
+}
 
 ul {
   list-style: none;
   margin: 0;
+  
 }
 
 ul li {
   font-size: 1.2rem;
   margin: 1rem;
+  text-align: left;
+}
+
+ul li:hover {
+  background-color: rgb(200, 58, 200);
+  transition: 0.5s;
 }
 
 ul li label {
@@ -72,3 +86,12 @@ ul li label {
   top: 40px;
   right: 40px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .page-header
+  .container {
+    min-width: 40rem;
+  }
+}
+  

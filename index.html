@@ -11,30 +11,30 @@
   <body>
     <header class="page-header">
       <h1>Coding Quiz Challenge</h1>
-      <h4>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score and time by 10.</h4>
-      <button class="quiz-button">Quiz Me</button>
+      <h4>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10.</h4>
+      <button id="quiz-btn" class="quiz-button">Quiz Me</button>
     </header>
 
     <main>
-      <section class="card">
-        <section class="question-card">
+      <section class="container">
+        <section id="question-container" class="hide">
           <h2 id ="question">Question</h2>
           <ul>
             <li>
               <input type="radio" name="answer" class="answer" id="a">
-              <label for="a">Answer</label>
+              <label for="a" data-number="1">Answer</label>
             </li>
             <li>
               <input type="radio" name="answer" class="answer" id="b">
-              <label for="b">Answer</label>
+              <label for="b" data-number="2">Answer</label>
             </li>
             <li>
               <input type="radio" name="answer" class="answer" id="c">
-              <label for="c">Answer</label>
+              <label for="c" data-number="3">Answer</label>
             </li>
             <li>
               <input type="radio" name="answer" class="answer" id="d">
-              <label for="d">Answer</label>
+              <label for="d" data-number="4">Answer</label>
             </li>
           </ul>
 
